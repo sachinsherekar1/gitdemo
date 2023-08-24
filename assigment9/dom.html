@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="populate">Populate List</button>
+    <ul id="list"></ul>
+
+    <script>
+        const data = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+        const list = document.querySelector('#list');
+        const populateButton = document.querySelector('#populate');
+
+        populateButton.addEventListener('click', () => {
+            list.innerHTML = '';
+            data.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                list.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
