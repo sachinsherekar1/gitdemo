@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PDF Project</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		p {
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>PDF Project</h1>
+	<p>This is an example of how you can create a PDF type project using HTML and CSS.</p>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script>
+    function generatePDF() {
+        const element = document.getElementById("pdf");
+        html2pdf()
+            .from(element)
+            .save();
+    }
+</script>
+<button onclick="generatePDF()">Generate PDF</button>
+</html>
+

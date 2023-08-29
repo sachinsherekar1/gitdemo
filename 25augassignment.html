@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header, .footer {
+  background-color: #16ddf8;
+  padding: 30px;
+  text-align: right;
+}
+
+.main { background-color: bisque;
+  float: left;
+  width: 97%;
+  padding: 20px;
+}
+
+.sidebar {
+  float: right;
+  width: 40%;
+  padding: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+  <p><h2>Company Name</h2><br>123  Maple Street Anytown,PA 17101<br>info@example.com <br>www.emaple.com<br>(123) 1234567</p>
+</div>
+
+<div class="main">
+  <h2>Welcome to my website!</h2>
+  <p>This is the main content area.</p>
+</div>
+
+<div class="sidebar">
+  <h2>About Me</h2>
+  <p>This is the sidebar content area.</p>
+</div>
+
+
+<div class="clearfix"></div>
+
+<div class="footer">
+  <h1>Sublease Agreement</h1>
+</div>
+
+</div>
+
+</body>
+</html>
